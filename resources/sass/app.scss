@@ -1,0 +1,265 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Paytone+One&display=swap');
+
+// Variables
+@import 'variables';
+
+
+//Variables
+$lightgreen:#99ee90;
+$lightpurple:#b19cd9;
+$lightblue:#98ddfc;
+
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+a {
+  text-decoration:none;
+  color:$lightgreen;
+}
+
+.background {
+  background:url('/img/MoonBackground.jpg');
+}
+
+img {
+  max-width:100%;
+}
+
+span {
+  color:$lightpurple;
+}
+
+.container {
+  max-width:1200px;
+  margin:auto;
+}
+
+header {
+  color:white;
+  height:100vh;
+
+  .top-nav {
+    font-family: 'Paytone One', sans-serif;
+    display: flex;
+    justify-content:space-between;
+    padding:9px;
+
+    .logo {
+      font-size:1.5rem;
+      color:$lightgreen;
+    }
+
+    ul {
+      display:flex;
+      font-size:1.4rem;
+      list-style:none;
+      justify-content:space-between;
+      width:60%;
+      margin:0px;
+
+      a {
+        color:$lightgreen;
+        &:hover {
+          color:darken($lightgreen,10%);
+        }
+      }
+    }
+  }
+
+  .hero {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:30px;
+    padding-top:99px;
+    padding-bottom:99px;
+
+
+    .hero-copy {
+      text-align: center;
+      margin-top:66px;
+      h1 {
+        color:$lightgreen;
+        font-family: 'Paytone One', sans-serif;
+        font-size: 2.5rem;
+        letter-spacing:0.2rem;
+        margin-bottom:66px;
+
+      }
+
+      p {
+        font-family: 'Bad Script', sans-serif;
+        font-size:2rem;
+        color: $lightblue;
+        transform:skewX(30deg);
+        transform:rotate(-5deg);
+        margin-bottom:66px;
+        overflow:hidden;
+
+      }
+
+      .buttons {
+        display:flex;
+        justify-content:space-around;
+        margin-bottom:66px;
+        a {
+          text-align:center;
+          font-family: 'Paytone One', sans-serif;
+          padding:9px;
+          width:33%;
+          border:1px solid $lightgreen;
+          color:$lightgreen;
+
+
+          &:hover {
+            border-color:darken($lightgreen, 10%);
+            color:darken($lightgreen,10%);
+          }
+        }
+      }
+    }
+    .hero-img {
+      margin-top:66px;
+      margin-left:40px;
+    }
+  } //end of top-nav
+}//end of header
+
+.about {
+  padding-top:66px;
+  padding-bottom:66px;
+  background: linear-gradient(rgba(11,11,11,0),rgba(11,11,11,0.3),rgba(11,11,11,0.6));
+  height:auto;
+  overflow-x:hidden;
+  text-align:center;
+  h1 {
+    color:$lightgreen;
+    font-family:'Paytone One', sans-serif;
+    font-size:2rem;
+    letter-spacing:0.1rem;
+    margin-bottom:33px;
+  }
+
+  p {
+    color:white;
+    font-family:'Paytone One', sans-serif;
+    font-size:1.25rem;
+  }
+
+  ul {
+    text-align:center;
+    margin:auto;
+    list-style: none;
+    color:$lightblue;
+    font-family: 'Bad Script', sans-serif;
+    font-size:1.25rem;
+    overflow:hidden;
+    li {
+      transform:skewX(30deg);
+      transform:rotate(-5deg);
+    }
+  }
+}
+
+.store {
+  padding-top:66px;
+  padding-bottom:66px;
+  background:linear-gradient(rgba(11,11,11,0.6),rgba(0,0,63,0.5));
+  height:auto;
+  text-align:center;
+
+  h1 {
+    color:$lightgreen;
+    font-family: 'Paytone One', sans-serif;
+    font-size:2rem;
+    letter-spacing:0.1rem;
+    margin-bottom:33px;
+  }
+
+  p {
+    color:white;
+    font-family: 'Paytone One', sans-serif;
+    font-size:1.25rem;
+    margin-bottom:33px;
+  }
+
+  .products {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .product {
+      margin-top:33px;
+      margin-bottom:33px;
+      a > p {
+        color:white;
+        font-family: 'Paytone One', sans-serif;
+      }
+      .product-price {
+        color:red;
+        font-family: 'Bad Script', sans-serif;
+        font-size:3rem;
+        overflow:hidden;
+        transform:rotate(-15deg);
+        position:relative;
+        bottom:20px;
+      }
+
+
+    }
+  }
+}
+
+.blog {
+  padding-top:66px;
+  padding-bottom:66px;
+  background:linear-gradient(rgba(0,0,63,0.5),rgba(253,251,211,0.3));
+  height:auto;
+  overflow-x:hidden;
+  text-align:center;
+
+  h1 {
+    color:$lightgreen;
+    font-family: 'Paytone One', sans-serif;
+    font-size:2rem;
+    letter-spacing:0.1rem;
+    margin-bottom:33px;
+  }
+
+  p {
+    color:white;
+    font-family: 'Paytone One', sans-serif;
+    font-size:1.25rem;
+    margin-bottom:33px;
+  }
+
+  .posts {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+
+    .post {
+      margin-top:33px;
+      margin-bottom:33px;
+      a > h2 {
+        font-family: 'Paytone One', sans-serif;
+        color:$lightpurple;
+      }
+
+      p {
+        font-family: 'Paytone One', sans-serif;
+        color:white;
+      }
+
+      p > a {
+        font-family: 'Bad Script', sans-serif;
+        color:$lightblue;
+      }
+    }
+  }
+}

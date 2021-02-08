@@ -1,0 +1,81 @@
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 860px;
+  }
+
+  header .top-nav {
+    flex-direction: column;
+  }
+
+  header .top-nav .logo {
+    margin: auto;
+    font-size: 2.5rem;
+  }
+
+  header .top-nav ul {
+    margin: auto;
+    padding: 0px;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  header .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+
+  header .hero .hero-copy {
+    margin: auto;
+    z-index: 100;
+  }
+
+  header .hero .hero-copy h1 {
+    font-size: 2rem;
+    margin-bottom: 33px;
+  }
+
+  header .hero .hero-copy p {
+    font-size: 1.75rem;
+    margin-bottom: 33px;
+  }
+
+  header .hero .hero-img {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .store .products {
+    grid-template-columns: 1fr;
+  }
+
+  .store .products .product {
+    margin: auto;
+  }
+
+  .blog .posts {
+    grid-template-columns: 1fr;
+  }
+
+  .blog .posts .post {
+    margin: auto;
+  }
+}
+
+/* Small Devices, Tablets */
+
+/* Extra Small Devices, Phones */
+
+/* Custom, iPhone Retina */
+

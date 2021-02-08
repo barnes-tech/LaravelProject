@@ -1,0 +1,256 @@
+@import url(https://fonts.googleapis.com/css2?family=Bad+Script&family=Paytone+One&display=swap);html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #99ee90;
+}
+
+.background {
+  background: url("/img/MoonBackground.jpg");
+}
+
+img {
+  max-width: 100%;
+}
+
+span {
+  color: #b19cd9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  color: white;
+  height: 100vh;
+}
+
+header .top-nav {
+  font-family: "Paytone One", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 9px;
+}
+
+header .top-nav .logo {
+  font-size: 1.5rem;
+  color: #99ee90;
+}
+
+header .top-nav ul {
+  display: flex;
+  font-size: 1.4rem;
+  list-style: none;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0px;
+}
+
+header .top-nav ul a {
+  color: #99ee90;
+}
+
+header .top-nav ul a:hover {
+  color: #70e764;
+}
+
+header .hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  padding-top: 99px;
+  padding-bottom: 99px;
+}
+
+header .hero .hero-copy {
+  text-align: center;
+  margin-top: 66px;
+}
+
+header .hero .hero-copy h1 {
+  color: #99ee90;
+  font-family: "Paytone One", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 66px;
+}
+
+header .hero .hero-copy p {
+  font-family: "Bad Script", sans-serif;
+  font-size: 2rem;
+  color: #98ddfc;
+  transform: skewX(30deg);
+  transform: rotate(-5deg);
+  margin-bottom: 66px;
+  overflow: hidden;
+}
+
+header .hero .hero-copy .buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 66px;
+}
+
+header .hero .hero-copy .buttons a {
+  text-align: center;
+  font-family: "Paytone One", sans-serif;
+  padding: 9px;
+  width: 33%;
+  border: 1px solid #99ee90;
+  color: #99ee90;
+}
+
+header .hero .hero-copy .buttons a:hover {
+  border-color: #70e764;
+  color: #70e764;
+}
+
+header .hero .hero-img {
+  margin-top: 66px;
+  margin-left: 40px;
+}
+
+.about {
+  padding-top: 66px;
+  padding-bottom: 66px;
+  background: linear-gradient(rgba(11, 11, 11, 0), rgba(11, 11, 11, 0.3), rgba(11, 11, 11, 0.6));
+  height: auto;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.about h1 {
+  color: #99ee90;
+  font-family: "Paytone One", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 33px;
+}
+
+.about p {
+  color: white;
+  font-family: "Paytone One", sans-serif;
+  font-size: 1.25rem;
+}
+
+.about ul {
+  text-align: center;
+  margin: auto;
+  list-style: none;
+  color: #98ddfc;
+  font-family: "Bad Script", sans-serif;
+  font-size: 1.25rem;
+  overflow: hidden;
+}
+
+.about ul li {
+  transform: skewX(30deg);
+  transform: rotate(-5deg);
+}
+
+.store {
+  padding-top: 66px;
+  padding-bottom: 66px;
+  background: linear-gradient(rgba(11, 11, 11, 0.6), rgba(0, 0, 63, 0.5));
+  height: auto;
+  text-align: center;
+}
+
+.store h1 {
+  color: #99ee90;
+  font-family: "Paytone One", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 33px;
+}
+
+.store p {
+  color: white;
+  font-family: "Paytone One", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 33px;
+}
+
+.store .products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.store .products .product {
+  margin-top: 33px;
+  margin-bottom: 33px;
+}
+
+.store .products .product a > p {
+  color: white;
+  font-family: "Paytone One", sans-serif;
+}
+
+.store .products .product .product-price {
+  color: red;
+  font-family: "Bad Script", sans-serif;
+  font-size: 3rem;
+  overflow: hidden;
+  transform: rotate(-15deg);
+  position: relative;
+  bottom: 20px;
+}
+
+.blog {
+  padding-top: 66px;
+  padding-bottom: 66px;
+  background: linear-gradient(rgba(0, 0, 63, 0.5), rgba(253, 251, 211, 0.3));
+  height: auto;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.blog h1 {
+  color: #99ee90;
+  font-family: "Paytone One", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 33px;
+}
+
+.blog p {
+  color: white;
+  font-family: "Paytone One", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 33px;
+}
+
+.blog .posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blog .posts .post {
+  margin-top: 33px;
+  margin-bottom: 33px;
+}
+
+.blog .posts .post a > h2 {
+  font-family: "Paytone One", sans-serif;
+  color: #b19cd9;
+}
+
+.blog .posts .post p {
+  font-family: "Paytone One", sans-serif;
+  color: white;
+}
+
+.blog .posts .post p > a {
+  font-family: "Bad Script", sans-serif;
+  color: #98ddfc;
+}
+
